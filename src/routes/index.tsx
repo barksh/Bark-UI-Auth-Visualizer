@@ -4,9 +4,8 @@
  * @description Index
  */
 
-import { InquiryActionType } from "@barksh/authentication-types";
-import { requestBarkInquiryV1, RequestBarkInquiryV1Response } from "@barksh/client-authentication-browser";
 import * as React from "react";
+import { BarkPopupWindowModel } from "../model/popup-window";
 
 export const IndexView: React.FC = () => {
 
@@ -14,18 +13,14 @@ export const IndexView: React.FC = () => {
 
     const signInAction = async () => {
 
-        const response: RequestBarkInquiryV1Response =
-            await requestBarkInquiryV1(domain, {
-                domain: 'auth-visualizer.bark.sh',
-                actions: [{
-                    type: InquiryActionType.CALLBACK,
-                    payload: 'http://localhost:5174/?exposure-key={exposure-key}',
-                }],
-                overrideTargetHost: 'http://localhost:4000',
-                overrideTargetUIHost: 'http://localhost:5173',
-            });
+        const model: BarkPopupWindowModel = BarkPopupWindowModel.fromDomains(
+            'auth-visualizer.bark.sh',
+            'bark.sh',
+        );
+        model.overrideTargetModuleHost('http://localhost:4000');
+        model.overrideTargetUIHost('http://localhost:5173');
 
-        console.log(response);
+        model.performInquiry();
     };
 
     return (<div>

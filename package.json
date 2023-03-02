@@ -1,0 +1,45 @@
+{
+    "name": "@barksh-ui/auth-visualizer",
+    "private": true,
+    "version": "1.0.0",
+    "description": "Auth Visualizer UI for Bark",
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc && vite build",
+        "preview": "vite preview"
+    },
+    "dependencies": {
+        "@barksh/authentication-types": "^1.0.0",
+        "@barksh/client-authentication-browser": "^1.0.0",
+        "@sudoo/magic": "^1.9.0",
+        "@sudoo/react-force": "^2.0.0",
+        "connor": "^2.8.0",
+        "react-router-dom": "^6.8.2",
+        "styled-components": "^5.3.6"
+    },
+    "devDependencies": {
+        "@sudoo/react-force-dev": "^2.0.0",
+        "@sudoo/triforce": "^3.10.1",
+        "@vitejs/plugin-react": "^3.1.0",
+        "dotenv": "^16.0.3",
+        "ts-node": "^10.9.1",
+        "vite": "^4.1.1"
+    },
+    "nyc": {
+        "extension": [
+            ".ts",
+            ".tsx"
+        ],
+        "include": [
+            "src/**/*.ts",
+            "src/**/*.tsx"
+        ],
+        "instrument": true,
+        "reporter": [
+            "json",
+            "text-summary"
+        ],
+        "report-dir": "coverage",
+        "sourceMap": true
+    }
+}

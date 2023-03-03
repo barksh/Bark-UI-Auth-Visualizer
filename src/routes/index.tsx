@@ -5,7 +5,7 @@
  */
 
 import * as React from "react";
-import { BarkPopupWindowModel } from "../model/popup-window";
+import { BarkPopupWindowModel } from "../aa/src/model/popup-window";
 
 export const IndexView: React.FC = () => {
 

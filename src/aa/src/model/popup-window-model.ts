@@ -1,7 +1,7 @@
 /**
  * @author WMXPY
  * @namespace Model
- * @description Popup Window
+ * @description Popup Window Model
  */
 
 import { InquiryActionType } from "@barksh/authentication-types";

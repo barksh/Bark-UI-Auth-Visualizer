@@ -4,7 +4,7 @@
  * @description Query Registerer
  */
 
-import { BarkStorageObject, BarkTempObject } from "../storage/declare";
+import { BarkTempObject } from "../storage/declare";
 import { BarkModelConfiguration } from "./configuration";
 import { BarkCrossSiteRegisterer } from "./cross-site-registerer";
 
@@ -28,17 +28,23 @@ export class BarkQueryRegistererRegisterer extends BarkCrossSiteRegisterer {
 
                 const tempObject: BarkTempObject = await this._configuration.loadTempObject();
 
-                if (tempObject.exposureKey === queryValue) {
-
-
-                    const refreshToken: string = await this.redeemInquiry(this._hiddenKey);
-
-                    const authenticationToken: string = await this.refreshToken(refreshToken);
-
-                    const storageObject: BarkStorageObject = await this._configuration.loadStorageObject();
-                    storageObject.exposureKey = queryValue;
-                    await this._configuration.persistStorageObject(storageObject);
+                if (tempObject.exposureKey !== queryValue) {
+                    return;
                 }
+
+                if (typeof tempObject.hiddenKey !== 'string'
+                    || typeof tempObject.targetDomain !== 'string') {
+                    throw new Error('Invalid Temp Object');
+                }
+
+                const refreshToken: string = await this.redeemInquiry(tempObject.hiddenKey);
+
+                const authenticationToken: string = await this.refreshToken(refreshToken);
+
+                await this._configuration.persistStorageObject({
+                    refreshToken,
+                    authenticationToken,
+                });
             }
         });
     }

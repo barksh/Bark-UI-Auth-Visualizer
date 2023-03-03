@@ -15,6 +15,8 @@ export interface IBarkStorageAgent {
 
 export type BarkTempObject = {
 
+    readonly targetDomain: string | null;
+    readonly overrideTargetModuleHost: string | null;
     readonly exposureKey: string | null;
     readonly hiddenKey: string | null;
 };

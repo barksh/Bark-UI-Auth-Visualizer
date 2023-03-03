@@ -5,6 +5,8 @@
  */
 
 import { BarkModelConfiguration } from "../model/configuration";
+import { BarkPopupWindowModel } from "../model/popup-window-model";
+import { BarkQueryRegistererRegisterer } from "../model/query-registerer";
 import { IBarkStorageAgent } from "../storage/declare";
 
 export class BarkAuthenticationClient {
@@ -25,5 +27,21 @@ export class BarkAuthenticationClient {
 
         this._configuration.setStorageAgent(storageAgent);
         return this;
+    }
+
+    public createPopupWindowModel(targetDomain: string): BarkPopupWindowModel {
+
+        return BarkPopupWindowModel.fromConfiguration(
+            targetDomain,
+            this._configuration,
+        );
+    }
+
+    public createQueryRegisterer(queryKey: string): BarkQueryRegistererRegisterer {
+
+        return BarkQueryRegistererRegisterer.create(
+            queryKey,
+            this._configuration,
+        );
     }
 }

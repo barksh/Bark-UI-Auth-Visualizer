@@ -6,6 +6,7 @@
 
 import * as React from "react";
 import { BarkPopupWindowModel } from "../aa/src/model/popup-window-model";
+import { barkClient } from "../util/bark-client";
 
 export const IndexView: React.FC = () => {
 
@@ -13,10 +14,10 @@ export const IndexView: React.FC = () => {
 
     const signInAction = async () => {
 
-        const model: BarkPopupWindowModel = BarkPopupWindowModel.fromDomains(
-            'auth-visualizer.bark.sh',
+        const model: BarkPopupWindowModel = barkClient.createPopupWindowModel(
             'bark.sh',
         );
+
         model.overrideTargetModuleHost('http://localhost:4000');
         model.overrideTargetUIHost('http://localhost:5173');
 

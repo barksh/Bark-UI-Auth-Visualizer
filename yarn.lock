@@ -237,11 +237,12 @@
   resolved "https://registry.yarnpkg.com/@barksh/authentication-types/-/authentication-types-1.0.0.tgz#006b61f4dc1291292c61bd47d5626a4724e3af0a"
   integrity sha512-bM0wZOM6QwRsFUvo95aPDbfpcxA1cd0On1tB9Y66n9Gz25pIR5LOQsHh5XjKxCTfR5rXnqL7DX1yrK7zZUXS4w==
 
-"@barksh/client-authentication-browser@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@barksh/client-authentication-browser/-/client-authentication-browser-1.0.0.tgz#e832988c81b9ddbaa1c4ab61c4eadc4e40e41154"
-  integrity sha512-Ibl7msj+UJRTZWVy/+s9DdcgvfjCSaaGVt30F+jrdTSXA+RYjazCiuIi0ac4PT6oWRPWoKapqcDzOmbeVJw75g==
+"@barksh/client-authentication-browser@^1.2.2":
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/@barksh/client-authentication-browser/-/client-authentication-browser-1.2.2.tgz#a76e03622791d199ffe865899e0f0df324546a85"
+  integrity sha512-r7Y3x/naIkz4cCOKLYixs82xPk1/b8cmmYq0ZR9aEk2C+XMPB7+JFsQ/vYr4ihmG9oOW5ib20sLGWokS8GNY3Q==
   dependencies:
+    "@sudoo/jwt-web" "^3.1.0"
     "@sudoo/magic" "^1.9.0"
     connor "^2.8.0"
 
@@ -527,6 +528,18 @@
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@sudoo/eslint-config/-/eslint-config-1.9.0.tgz#b42d65c1458052680b185c4b31dec42ec26cfbab"
   integrity sha512-TgGdJQB93go9pknnDv5klolsa1bvJwiXVur+S5oL6TY0xg3C4QQeqeNHhOZ2qD4bkZ2upwr2N/LraUfxRJz8hg==
+
+"@sudoo/jwt-config@latest":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@sudoo/jwt-config/-/jwt-config-1.3.0.tgz#62c7507a5f78f6148ca255ea86036c330a11ab39"
+  integrity sha512-BqP0E0my8dsgMxNfC4BvZ2BLBqFoB2FLusxkUUmuJSqqbOrINNcIzTZkNHj7Ht5+3/pVPKpDPniLbqK2u9v7nw==
+
+"@sudoo/jwt-web@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@sudoo/jwt-web/-/jwt-web-3.1.0.tgz#40a9ceb1a0af7c160c3356277c105211a83ad831"
+  integrity sha512-T/MZ8QL1J/CPkRRac6+uqzvO58x8HREdgHTYVJk8mRGh5F/zzN/dNXXmoXmZCnbMMw5qq/Fvocbi8s5BlJAunQ==
+  dependencies:
+    "@sudoo/jwt-config" latest
 
 "@sudoo/magic@^1.9.0":
   version "1.9.0"

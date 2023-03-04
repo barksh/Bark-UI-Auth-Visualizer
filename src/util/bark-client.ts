@@ -4,7 +4,11 @@
  * @description Bark Client
  */
 
-import { BarkAuthenticationClient } from "../aa/src";
+import { BarkAuthenticationClient } from "@barksh/client-authentication-browser";
 
 export const barkClient = BarkAuthenticationClient
     .create('auth-visualizer.bark.sh');
+
+barkClient.addOnSignOutAction(() => {
+    window.location.replace('/');
+});

@@ -5,14 +5,28 @@
  */
 
 import * as React from "react";
-import { createBrowserRouter } from "react-router-dom";
-import { IndexView } from "./routes/index";
+import { createBrowserRouter, Navigate } from "react-router-dom";
+import { LoadingView } from "./routes/loading";
+import { SignInView } from "./routes/sign-in";
+import { VisualizeView } from "./routes/visualize";
 
 const routes = [
     {
         path: "/",
-        element: <IndexView /> as React.ReactElement,
+        element: <Navigate to="/loading" replace />
     },
+    {
+        path: "/sign-in",
+        element: <SignInView /> as React.ReactElement,
+    },
+    {
+        path: "/loading",
+        element: <LoadingView /> as React.ReactElement,
+    },
+    {
+        path: "/visualizer",
+        element: <VisualizeView /> as React.ReactElement,
+    }
 ];
 
 export const browserRouter = createBrowserRouter(routes, {

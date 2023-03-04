@@ -24,7 +24,7 @@ jobs:
         run: |
           npm install @sudoo/build-cli -g
           sudoo-build install
-      - name: Build Storybook
+      - name: Build Project
         run: |
           yarn run build
       - name: Upload artifact

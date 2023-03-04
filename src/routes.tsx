@@ -5,7 +5,7 @@
  */
 
 import * as React from "react";
-import { createBrowserRouter, Navigate } from "react-router-dom";
+import { createHashRouter, Navigate } from "react-router-dom";
 import { LoadingView } from "./routes/loading";
 import { SignInView } from "./routes/sign-in";
 import { VisualizeView } from "./routes/visualize";
@@ -29,5 +29,5 @@ const routes = [
     }
 ];
 
-export const browserRouter = createBrowserRouter(routes, {
+export const browserRouter = createHashRouter(routes, {
 });

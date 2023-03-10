@@ -6,9 +6,12 @@
 
 import { BarkPopupWindowModel } from "@barksh/client-authentication-browser";
 import * as React from "react";
+import { useNavigate } from "react-router-dom";
 import { barkClient } from "../util/bark-client";
 
 export const SignInView: React.FC = () => {
+
+    const navigate = useNavigate();
 
     const [domain, setDomain] = React.useState('');
 
@@ -19,7 +22,9 @@ export const SignInView: React.FC = () => {
         );
 
         const authenticationToken = await model.performInquiry();
-        console.log(authenticationToken.body.identifier);
+        console.log(authenticationToken);
+
+        navigate('/visualizer');
     };
 
     return (<div>

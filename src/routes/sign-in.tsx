@@ -13,6 +13,7 @@ export const SignInView: React.FC = () => {
 
     const navigate = useNavigate();
 
+    const [loading, setLoading] = React.useState(false);
     const [domain, setDomain] = React.useState('');
 
     const signInAction = async () => {
@@ -21,23 +22,37 @@ export const SignInView: React.FC = () => {
             domain,
         );
 
-        const authenticationToken = await model.performInquiry();
-        console.log(authenticationToken);
+        try {
 
-        navigate('/visualizer');
+            const authenticationToken = await model.performInquiry();
+            console.log(authenticationToken);
+            navigate('/visualizer');
+        } catch (error) {
+            console.log(error);
+            setLoading(false);
+            return;
+        }
     };
 
     return (<div>
         SignIn
         <input
             value={domain}
+            disabled={loading}
             onChange={(event) => {
                 setDomain(event.target.value);
             }}
             placeholder="Domain"
         />
-        <button onClick={() => {
-            signInAction();
-        }}>SignIn</button>
+        <br />
+        <button
+            disabled={loading}
+            onClick={() => {
+                setLoading(true);
+                signInAction();
+            }}
+        >SignIn</button>
+        <br />
+        {loading ? 'Loading...' : null}
     </div>);
 };

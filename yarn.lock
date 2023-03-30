@@ -237,10 +237,10 @@
     "@sudoo/random" "^2.2.0"
     styled-components "^5.3.9"
 
-"@barksh/client-authentication-browser@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@barksh/client-authentication-browser/-/client-authentication-browser-1.4.0.tgz#9b3506df5fdcb6630417f0e20f9f7dad30c495c7"
-  integrity sha512-pCDad/3mBJlNLblb3xrE54Sb8TnvGW5GtfrLqJ07fseWSDxeAzATJ5DJlYZBL7BQSDe6mhNTVhekI6bEs6qZKw==
+"@barksh/client-authentication-browser@^1.4.1":
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/@barksh/client-authentication-browser/-/client-authentication-browser-1.4.1.tgz#e676f84edbf864302dfa60f90d45d3ac0bfc3f14"
+  integrity sha512-5o77lhvBbZwE9bJZR/7T0BUEc8P3DOpImytPWILKRsacUasWF9xJVMlKl9WWe4Hv/63Qbjku1NfnFxg2uOLjxA==
   dependencies:
     "@sudoo/jwt-web" "^3.1.0"
     "@sudoo/magic" "^1.9.0"

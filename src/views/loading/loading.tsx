@@ -1,12 +1,13 @@
 /**
  * @author WMXPY
- * @namespace Routes
+ * @namespace Views_Loading
  * @description Loading
  */
 
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
-import { barkClient } from "../util/bark-client";
+import { barkClient } from "../../util/bark-client";
+import { LoadingContainer } from "./styles/container";
 
 export const LoadingView: React.FC = () => {
 
@@ -36,7 +37,7 @@ export const LoadingView: React.FC = () => {
         verifyToken();
     }, []);
 
-    return (<div>
+    return (<LoadingContainer>
         Loading
-    </div>);
+    </LoadingContainer>);
 };

@@ -13,11 +13,21 @@ export const LoadingView: React.FC = () => {
 
     const navigate = useNavigate();
 
+    const register = async () => {
+
+        await barkClient.createStartUpRegisterer().register();
+    };
+
     const verifyToken = async () => {
 
         const token = await barkClient.getAuthenticationToken();
 
         if (!token) {
+
+            await barkClient.createQueryRegisterer(
+                'expose-key',
+            ).register();
+
             navigate('/sign-in');
             return;
         }
@@ -34,6 +44,7 @@ export const LoadingView: React.FC = () => {
     };
 
     React.useEffect(() => {
+        register();
         verifyToken();
     }, []);
 

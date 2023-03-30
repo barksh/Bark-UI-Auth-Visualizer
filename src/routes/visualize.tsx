@@ -4,14 +4,14 @@
  * @description Visualize
  */
 
-import { JWTAuthenticationToken } from "@barksh/client-authentication-browser/token/declare";
+import { BarkAuthenticationToken } from "@barksh/token-browser";
 import * as React from "react";
 import { useNavigate } from "react-router-dom";
 import { barkClient } from "../util/bark-client";
 
 export const VisualizeView: React.FC = () => {
 
-    const [token, setToken] = React.useState<JWTAuthenticationToken | null>(null);
+    const [token, setToken] = React.useState<BarkAuthenticationToken | null>(null);
 
     const navigate = useNavigate();
 
@@ -34,9 +34,9 @@ export const VisualizeView: React.FC = () => {
         return (<div>
             Visualize
             <br />
-            {token.body.identifier}
+            {token.getAccountIdentifier()}
             <br />
-            {token.stringify()}
+            {token.getRawToken()}
             <br />
             <button onClick={() => {
                 barkClient.signOut();

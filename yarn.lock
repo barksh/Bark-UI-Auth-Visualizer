@@ -238,6 +238,14 @@
     "@sudoo/magic" "^1.9.0"
     connor "^2.8.0"
 
+"@barksh/token-browser@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@barksh/token-browser/-/token-browser-1.2.0.tgz#54d36986cc999811047fb02dfb02f22c91346257"
+  integrity sha512-FRiFKqydBUUNC0Ov44ps0C6q7P/+dKALWk4phnZ2VckA39owe/BP9ghd69G2Df87lUvby15WhXsj48hYOTDvNg==
+  dependencies:
+    "@sudoo/jwt-web" "^3.1.0"
+    connor "^2.8.0"
+
 "@cspotcode/source-map-support@^0.8.0":
   version "0.8.1"
   resolved "https://registry.yarnpkg.com/@cspotcode/source-map-support/-/source-map-support-0.8.1.tgz#00629c35a688e05a88b1cda684fb9d5e73f000a1"

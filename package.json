@@ -11,7 +11,7 @@
     "dependencies": {
         "@barksh/authentication-types": "^1.0.0",
         "@barksh/bark-design-react": "^1.2.1",
-        "@barksh/client-authentication-browser": "^1.4.0",
+        "@barksh/client-authentication-browser": "^1.5.3",
         "@barksh/token-browser": "^1.2.0",
         "@sudoo/magic": "^1.9.0",
         "@sudoo/react-force": "^2.0.0",

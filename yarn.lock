@@ -237,13 +237,14 @@
     "@sudoo/random" "^2.2.0"
     styled-components "^5.3.9"
 
-"@barksh/client-authentication-browser@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@barksh/client-authentication-browser/-/client-authentication-browser-1.4.0.tgz#9b3506df5fdcb6630417f0e20f9f7dad30c495c7"
-  integrity sha512-pCDad/3mBJlNLblb3xrE54Sb8TnvGW5GtfrLqJ07fseWSDxeAzATJ5DJlYZBL7BQSDe6mhNTVhekI6bEs6qZKw==
+"@barksh/client-authentication-browser@^1.5.3":
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/@barksh/client-authentication-browser/-/client-authentication-browser-1.5.3.tgz#b672fa8b4e218e1ed0d5d72d534a7adb14e3b51d"
+  integrity sha512-QIOUAZDWcrDedfiuEErRw2/0WE9B065goT4XjDgDCRGyuRW1fNb4OKHM8R3Si7wHHe+Wqi7LSPi7UCR3HzFcfQ==
   dependencies:
     "@sudoo/jwt-web" "^3.1.0"
     "@sudoo/magic" "^1.9.0"
+    "@sudoo/url" "^1.5.1"
     connor "^2.8.0"
 
 "@barksh/token-browser@^1.2.0":
@@ -539,6 +540,11 @@
   resolved "https://registry.yarnpkg.com/@remix-run/router/-/router-1.5.0.tgz#57618e57942a5f0131374a9fdb0167e25a117fdc"
   integrity sha512-bkUDCp8o1MvFO+qxkODcbhSqRa6P2GXgrGZVpt0dCXNW2HCSCqYI0ZoAqEOSAjRWmmlKcYgFvN4B4S+zo/f8kg==
 
+"@sudoo/buffer@^1.5.0":
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/@sudoo/buffer/-/buffer-1.5.0.tgz#f245059617159494b783a4421bae2365013dd65d"
+  integrity sha512-fpOl5FGF55S5fdlks0IEUROnAtrdHGKw5k9g7G1utwU0U011lGkOgtlJVYheYuC+UtYZFo3rwkPuUSWdwn56JQ==
+
 "@sudoo/eslint-config-react-a11y@1.0.0":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@sudoo/eslint-config-react-a11y/-/eslint-config-react-a11y-1.0.0.tgz#6782f38a9f7a31a0a3bd189ded2ebb3eef7ad70a"
@@ -645,6 +651,13 @@
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/@sudoo/tsconfig/-/tsconfig-1.6.0.tgz#4c03395d7ddb10f3666d9437820f1d92c6f06895"
   integrity sha512-o9mL3Bxt5C3PXa5mR+E4aejg+2OK+nU9sekFRPB7MFk5NNX1tgsK8DGD00OOHxDt7pFdO3EkOdBLzdNZbjSzoQ==
+
+"@sudoo/url@^1.5.1":
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/@sudoo/url/-/url-1.5.1.tgz#7a214ddf62181d035da5486ef9ea9f9a0ccf0ec8"
+  integrity sha512-xInpk72AS7F1bC9vGtoVkJ59+e/9jkgw3K55fC+ps6duYO5x8zTvBTdiwgwMRYfb/sDQrOo/KoXY/y/3ekjwsw==
+  dependencies:
+    "@sudoo/buffer" "^1.5.0"
 
 "@testing-library/dom@^8.5.0":
   version "8.20.0"

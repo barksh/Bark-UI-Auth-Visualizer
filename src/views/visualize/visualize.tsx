@@ -76,6 +76,14 @@ export const VisualizeView: React.FC = () => {
                             <td>Token Identifier</td>
                             <td>{token.getTokenIdentifier()}</td>
                         </tr>
+                        <tr>
+                            <td>Issued At</td>
+                            <td>{token.getIssueAtDate().toLocaleString()}</td>
+                        </tr>
+                        <tr>
+                            <td>Expired At</td>
+                            <td>{token.getExpireAtDate().toLocaleString()}</td>
+                        </tr>
                     </tbody>
                 </Table>
             </Card>

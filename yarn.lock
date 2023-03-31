@@ -247,10 +247,10 @@
     "@sudoo/url" "^1.5.1"
     connor "^2.8.0"
 
-"@barksh/token-browser@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@barksh/token-browser/-/token-browser-1.2.0.tgz#54d36986cc999811047fb02dfb02f22c91346257"
-  integrity sha512-FRiFKqydBUUNC0Ov44ps0C6q7P/+dKALWk4phnZ2VckA39owe/BP9ghd69G2Df87lUvby15WhXsj48hYOTDvNg==
+"@barksh/token-browser@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@barksh/token-browser/-/token-browser-1.3.0.tgz#883bd5fb52db7f85b3e115f131781719a2252691"
+  integrity sha512-6RuCtYJ1I0UaqQcXGQzMDNXZjMtIS51IKpcPVGfRVlRpY5xV/JWY2TgtSDnxdkTmFcPvUf+BxMGj3vUfpjL1iw==
   dependencies:
     "@sudoo/jwt-web" "^3.1.0"
     connor "^2.8.0"
@@ -1538,11 +1538,6 @@ domexception@^4.0.0:
   integrity sha512-A2is4PLG+eeSfoTMA95/s4pvAoSo2mKtiM5jlHkAVewmiO8ISFTFKZjH7UAM1Atli/OT/7JHOrJRJiMKUZKYBw==
   dependencies:
     webidl-conversions "^7.0.0"
-
-dotenv@^16.0.3:
-  version "16.0.3"
-  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.3.tgz#115aec42bac5053db3c456db30cc243a5a836a07"
-  integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
 
 electron-to-chromium@^1.4.284:
   version "1.4.315"

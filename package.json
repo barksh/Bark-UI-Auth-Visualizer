@@ -12,7 +12,7 @@
         "@barksh/authentication-types": "^1.0.0",
         "@barksh/bark-design-react": "^1.2.1",
         "@barksh/client-authentication-browser": "^1.5.3",
-        "@barksh/token-browser": "^1.2.0",
+        "@barksh/token-browser": "^1.3.0",
         "@sudoo/magic": "^1.9.0",
         "@sudoo/react-force": "^2.0.0",
         "connor": "^2.8.0",
@@ -24,7 +24,6 @@
         "@sudoo/triforce": "^3.11.0",
         "@types/styled-components": "^5.1.26",
         "@vitejs/plugin-react": "^3.1.0",
-        "dotenv": "^16.0.3",
         "ts-node": "^10.9.1",
         "vite": "^4.2.1"
     },

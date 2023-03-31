@@ -6,9 +6,9 @@
 
 import * as React from "react";
 import { createHashRouter, Navigate } from "react-router-dom";
-import { VisualizeView } from "./routes/visualize";
 import { LoadingView } from "./views/loading/loading";
 import { SignInView } from "./views/sign-in/sign-in";
+import { VisualizeView } from "./views/visualize/visualize";
 
 const routes = [
     {

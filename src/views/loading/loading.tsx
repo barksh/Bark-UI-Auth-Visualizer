@@ -24,11 +24,18 @@ export const LoadingView: React.FC = () => {
 
         if (!token) {
 
-            await barkClient.createQueryRegisterer(
+            const queryRegisterer = barkClient.createQueryRegisterer(
                 'expose-key',
-            ).register();
+            );
 
-            navigate('/sign-in');
+            queryRegisterer.addSucceedAction(() => {
+                navigate('/visualizer');
+            });
+            queryRegisterer.addNeutralAction(() => {
+                navigate('/sign-in');
+            });
+
+            await queryRegisterer.register();
             return;
         }
 

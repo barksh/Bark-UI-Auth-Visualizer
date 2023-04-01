@@ -23,6 +23,8 @@ export const VisualizeRefreshView: React.FC<VisualizeRefreshViewProps> = (props:
         <Code
             language="raw"
             copyButton="Copy Token"
+            noBorder
+            noMargin
             wrap
         >
             {token.getRawToken()}

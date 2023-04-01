@@ -23,6 +23,8 @@ export const VisualizeAuthenticationView: React.FC<VisualizeAuthenticationViewPr
         <Code
             language="raw"
             copyButton="Copy Token"
+            noBorder
+            noMargin
             wrap
         >
             {token.getRawToken()}

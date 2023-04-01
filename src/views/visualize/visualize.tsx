@@ -43,8 +43,10 @@ export const VisualizeView: React.FC = () => {
     if (authenticationToken && refreshToken) {
         return (<VisualizeContainer>
             <Card
-                bodyTitle={`Hello, ${authenticationToken.getAccountIdentifier()}`}
-                maxWidth={200}
+                headerTitle={`Hello, ${authenticationToken.getAccountIdentifier()}`}
+                minWidth="512px"
+                maxWidth="768px"
+                noPadding
                 actions={[
                     <Button
                         key="sign-out"
@@ -58,6 +60,7 @@ export const VisualizeView: React.FC = () => {
             >
                 <Tabs
                     controller={controller}
+                    noBorder
                 >
                     <VisualizeAuthenticationView
                         token={authenticationToken}

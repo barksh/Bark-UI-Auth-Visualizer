@@ -4,7 +4,7 @@
  * @description Visualize
  */
 
-import { Code, Tab, Table } from "@barksh/bark-design-react";
+import { Code, Separator, Tab, Table } from "@barksh/bark-design-react";
 import { BarkAuthenticationToken } from "@barksh/token-browser";
 import * as React from "react";
 
@@ -29,8 +29,12 @@ export const VisualizeAuthenticationView: React.FC<VisualizeAuthenticationViewPr
         >
             {token.getRawToken()}
         </Code>
+        <Separator
+            size="small"
+        />
         <Table
             fixedLayout
+            noOuterBorder
         >
             <tbody>
                 <tr>

@@ -4,7 +4,7 @@
  * @description Refresh
  */
 
-import { Code, Tab, Table } from "@barksh/bark-design-react";
+import { Code, Separator, Tab, Table } from "@barksh/bark-design-react";
 import { BarkRefreshToken } from "@barksh/token-browser";
 import * as React from "react";
 
@@ -29,8 +29,12 @@ export const VisualizeRefreshView: React.FC<VisualizeRefreshViewProps> = (props:
         >
             {token.getRawToken()}
         </Code>
+        <Separator
+            size="small"
+        />
         <Table
             fixedLayout
+            noOuterBorder
         >
             <tbody>
                 <tr>

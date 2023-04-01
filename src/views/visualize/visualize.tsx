@@ -7,6 +7,7 @@
 import { Button, Card, Tabs, useTabs } from "@barksh/bark-design-react";
 import { BarkAuthenticationToken, BarkRefreshToken } from "@barksh/token-browser";
 import * as React from "react";
+import { HiOutlineLogout } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
 import { barkClient } from "../../util/bark-client";
 import { VisualizeAuthenticationView } from "./authentication";
@@ -47,16 +48,17 @@ export const VisualizeView: React.FC = () => {
                 minWidth="512px"
                 maxWidth="768px"
                 noPadding
-                actions={[
-                    <Button
-                        key="sign-out"
-                        onClick={() => {
-                            barkClient.signOut();
-                        }}
-                    >
-                        Sign Out
-                    </Button>
-                ]}
+                actions={<Button
+                    actionPrefix
+                    prefix={<HiOutlineLogout
+                        size={18}
+                    />}
+                    onClick={() => {
+                        barkClient.signOut();
+                    }}
+                >
+                    Sign Out
+                </Button>}
             >
                 <Tabs
                     controller={controller}

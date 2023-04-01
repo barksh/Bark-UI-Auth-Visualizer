@@ -7,6 +7,7 @@
 import { Button, ButtonGroup, Card, InputText, LoadingContainerRectangle } from "@barksh/bark-design-react";
 import { BarkPopupWindowModel, BarkRedirectModel } from "@barksh/client-authentication-browser";
 import * as React from "react";
+import { HiSparkles, HiSun } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
 import { barkClient } from "../../util/bark-client";
 import { SignInContainer } from "./styles/container";
@@ -62,6 +63,10 @@ export const SignInView: React.FC = () => {
             width="58%"
             actions={<ButtonGroup>
                 <Button
+                    actionPrefix
+                    prefix={<HiSparkles
+                        size={18}
+                    />}
                     onClick={() => {
                         setLoading(true);
                         popUpAction();
@@ -70,6 +75,10 @@ export const SignInView: React.FC = () => {
                     Pop Up
                 </Button>
                 <Button
+                    actionPrefix
+                    prefix={<HiSun
+                        size={18}
+                    />}
                     onClick={() => {
                         setLoading(true);
                         redirectAction();

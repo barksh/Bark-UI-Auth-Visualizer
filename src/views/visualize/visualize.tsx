@@ -45,7 +45,7 @@ export const VisualizeView: React.FC = () => {
         return (<VisualizeContainer>
             <Card
                 headerTitle={`Hello, ${authenticationToken.getAccountIdentifier()}`}
-                minWidth="512px"
+                minWidth="min(512px, 100vw)"
                 maxWidth="768px"
                 noPadding
                 actions={<Button

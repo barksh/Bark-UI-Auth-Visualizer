@@ -60,26 +60,24 @@ export const SignInView: React.FC = () => {
             loadingPlaceholder="Loading..."
             headerTitle="Sign In"
             width="58%"
-            actions={[
-                <ButtonGroup key="group">
-                    <Button
-                        onClick={() => {
-                            setLoading(true);
-                            popUpAction();
-                        }}
-                    >
-                        Pop Up
-                    </Button>
-                    <Button
-                        onClick={() => {
-                            setLoading(true);
-                            redirectAction();
-                        }}
-                    >
-                        Redirection
-                    </Button>
-                </ButtonGroup>
-            ]}
+            actions={<ButtonGroup>
+                <Button
+                    onClick={() => {
+                        setLoading(true);
+                        popUpAction();
+                    }}
+                >
+                    Pop Up
+                </Button>
+                <Button
+                    onClick={() => {
+                        setLoading(true);
+                        redirectAction();
+                    }}
+                >
+                    Redirection
+                </Button>
+            </ButtonGroup>}
         >
             <InputText
                 maximize

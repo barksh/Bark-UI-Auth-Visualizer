@@ -229,18 +229,18 @@
   resolved "https://registry.yarnpkg.com/@barksh/authentication-types/-/authentication-types-1.0.0.tgz#006b61f4dc1291292c61bd47d5626a4724e3af0a"
   integrity sha512-bM0wZOM6QwRsFUvo95aPDbfpcxA1cd0On1tB9Y66n9Gz25pIR5LOQsHh5XjKxCTfR5rXnqL7DX1yrK7zZUXS4w==
 
-"@barksh/bark-design-react@^1.6.1":
-  version "1.6.1"
-  resolved "https://registry.yarnpkg.com/@barksh/bark-design-react/-/bark-design-react-1.6.1.tgz#ba894db0f653216650e1ab16b9588fe08bbbd32a"
-  integrity sha512-8xpJ8G+xOlabdEGIuGJw90I6YB0tYzYkj8frJhSOe4Wa+l656UJWWmsOl/cKPElAUJE6qtKMHReafabf/xXGQQ==
+"@barksh/bark-design-react@^1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@barksh/bark-design-react/-/bark-design-react-1.7.0.tgz#a04407d98a952a4ce92b2ffc3de5be75e6a8de61"
+  integrity sha512-BP2u6zzcmkJslVbAcK/zIiXGlkHScKIYsoyl1LoPJiXjJTETHUIxGyGhFD6MFrtZ06ccP8eMJwmjTXBRrIpSdw==
   dependencies:
     "@sudoo/random" "^2.2.0"
     styled-components "^5.3.9"
 
-"@barksh/client-authentication-browser@^1.6.2":
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/@barksh/client-authentication-browser/-/client-authentication-browser-1.6.2.tgz#2f05af53032a688ce1d340d62127d160e090599f"
-  integrity sha512-nQ1sLDJIr9BjEkbQqQQNKjPQDi4lw0UP7OlUUExHxjOKxGoLc2YEAB/rsDQjga4wo7nfdPewWgO6aOh6Qtu/sA==
+"@barksh/client-authentication-browser@^1.6.3":
+  version "1.6.3"
+  resolved "https://registry.yarnpkg.com/@barksh/client-authentication-browser/-/client-authentication-browser-1.6.3.tgz#283b01b2d6514d2fb9e88bd9ee9a6b1fda231425"
+  integrity sha512-8PoI9279ZgzZROVX+4cJ1TplCFBKXCk7PAF7D2F5ysxjnQcWU/Y4WvJD2ZiQN3P6ehkIT9vXE3Dc6zeMvAFtag==
   dependencies:
     "@sudoo/jwt-web" "^3.1.0"
     "@sudoo/magic" "^1.9.0"

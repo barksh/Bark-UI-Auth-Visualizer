@@ -60,7 +60,8 @@ export const SignInView: React.FC = () => {
             loadingProvider={LoadingContainerRectangle}
             loadingPlaceholder="Loading..."
             headerTitle="Sign In"
-            width="58%"
+            minWidth="min(512px, 100vw)"
+            maxWidth="768px"
             actions={<ButtonGroup>
                 <Button
                     actionPrefix

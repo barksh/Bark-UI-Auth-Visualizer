@@ -1,7 +1,6 @@
 {
     "name": "@barksh-ui/auth-visualizer",
     "private": true,
-    "version": "1.0.0",
     "description": "Auth Visualizer UI for Bark",
     "scripts": {
         "dev": "vite",

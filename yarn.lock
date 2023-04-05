@@ -229,10 +229,10 @@
   resolved "https://registry.yarnpkg.com/@barksh/authentication-types/-/authentication-types-1.0.0.tgz#006b61f4dc1291292c61bd47d5626a4724e3af0a"
   integrity sha512-bM0wZOM6QwRsFUvo95aPDbfpcxA1cd0On1tB9Y66n9Gz25pIR5LOQsHh5XjKxCTfR5rXnqL7DX1yrK7zZUXS4w==
 
-"@barksh/bark-design-react@^1.7.1":
-  version "1.7.1"
-  resolved "https://registry.yarnpkg.com/@barksh/bark-design-react/-/bark-design-react-1.7.1.tgz#14a8b22899a2f8cc88ba82cb07f17456ee935e94"
-  integrity sha512-wR3As94oBV4p/dZ7n8HFuFm74+WWWIKfLe9d8j+IZM6xsJBaVjX+Y95Q1QC9y8eX/LnC8tjs/J0oLkR0ZeQ/Tw==
+"@barksh/bark-design-react@^1.7.2":
+  version "1.7.2"
+  resolved "https://registry.yarnpkg.com/@barksh/bark-design-react/-/bark-design-react-1.7.2.tgz#2b7b83334fc9c6a1368dd8e45ffdae5347bba3f2"
+  integrity sha512-UamaZ8Q4z2EyDSP8yfwlG+J56VI0ZpswJRChZOgbpfp6RfQADtLXUCYowqIbBvahJeymiZ6C+l/Mut5FPsPEVQ==
   dependencies:
     "@sudoo/random" "^2.2.0"
     styled-components "^5.3.9"

@@ -27,11 +27,11 @@ export const SignInView: React.FC = () => {
 
         try {
 
-            const authenticationToken = await model.performInquiry();
-            console.log(authenticationToken);
+            await model.performInquiry();
+
             navigate('/visualizer');
         } catch (error) {
-            console.log(error);
+
             setLoading(false);
             return;
         }
@@ -48,7 +48,7 @@ export const SignInView: React.FC = () => {
 
             await model.performInquiry();
         } catch (error) {
-            console.log(error);
+
             setLoading(false);
             return;
         }
@@ -56,11 +56,13 @@ export const SignInView: React.FC = () => {
 
     return (<SignInContainer>
         <Card
+            size="large"
             loading={loading}
             loadingProvider={LoadingContainerRectangle}
-            loadingPlaceholder="Loading..."
+            loadingSize="regular"
             headerTitle="Sign In"
             minWidth="min(512px, 100vw)"
+            minHeight="min(256px, 100vh)"
             maxWidth="768px"
             actions={<ButtonGroup>
                 <Button

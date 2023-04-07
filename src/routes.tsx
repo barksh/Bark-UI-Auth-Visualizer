@@ -26,7 +26,7 @@ const routes = [
     {
         path: "/visualizer",
         element: <VisualizeView /> as React.ReactElement,
-    }
+    },
 ];
 
 export const browserRouter = createHashRouter(routes, {

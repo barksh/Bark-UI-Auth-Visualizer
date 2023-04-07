@@ -3,7 +3,7 @@
     "private": true,
     "description": "Auth Visualizer UI for Bark",
     "scripts": {
-        "dev": "vite",
+        "dev": "export VITE_CLIENT_DOMAIN=\"auth-visualizer.bark.sh\" && vite",
         "build": "tsc && vite build",
         "preview": "vite preview"
     },

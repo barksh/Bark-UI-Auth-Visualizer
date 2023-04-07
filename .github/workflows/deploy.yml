@@ -29,6 +29,7 @@ jobs:
           sudoo-build install
       - name: Build Project
         run: |
+          echo "Using VITE_CLIENT_DOMAIN: $VITE_CLIENT_DOMAIN"
           yarn run build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1

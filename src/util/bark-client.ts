@@ -5,9 +5,10 @@
  */
 
 import { BarkAuthenticationClient } from "@barksh/client-authentication-browser";
+import { EnvironmentVariables } from "./environment";
 
 export const barkClient = BarkAuthenticationClient
-    .create('auth-visualizer.bark.sh');
+    .create(EnvironmentVariables.clientDomain);
 
 barkClient.addOnSignOutAction(() => {
     window.location.replace('/');

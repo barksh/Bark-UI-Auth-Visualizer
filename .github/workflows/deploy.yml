@@ -31,6 +31,8 @@ jobs:
         run: |
           echo "Using VITE_CLIENT_DOMAIN: $VITE_CLIENT_DOMAIN"
           yarn run build
+        env:
+          VITE_CLIENT_DOMAIN: ${{ vars.VITE_CLIENT_DOMAIN }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:

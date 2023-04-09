@@ -6,6 +6,7 @@
 
 import { Button, ButtonGroup, Card, InputText, LoadingContainerRectangle } from "@barksh/bark-design-react";
 import { BarkPopupWindowModel, BarkRedirectModel } from "@barksh/client-authentication-browser";
+import { RecentSignInRecord } from "@barksh/client-authentication-browser/storage/declare";
 import * as React from "react";
 import { HiSparkles, HiSun } from "react-icons/hi";
 import { useNavigate } from "react-router-dom";
@@ -16,6 +17,8 @@ export const SignInView: React.FC = () => {
 
     const navigate = useNavigate();
 
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const [recentDomains, setRecentDomains] = React.useState<RecentSignInRecord[]>([]);
     const [loading, setLoading] = React.useState(false);
     const [domain, setDomain] = React.useState('');
 
@@ -49,10 +52,20 @@ export const SignInView: React.FC = () => {
             await model.performInquiry();
         } catch (error) {
 
+            console.log(error);
             setLoading(false);
             return;
         }
     };
+
+    React.useEffect(() => {
+
+        barkClient.getRecentSignInRecords().then(
+            (records: RecentSignInRecord[]) => {
+                setRecentDomains(records);
+            },
+        );
+    }, []);
 
     return (<SignInContainer>
         <Card

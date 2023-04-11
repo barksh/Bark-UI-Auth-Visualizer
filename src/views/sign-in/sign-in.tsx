@@ -4,7 +4,7 @@
  * @description Sign In
  */
 
-import { Button, ButtonGroup, Card, InputText, LoadingContainerRectangle } from "@barksh/bark-design-react";
+import { Button, ButtonGroup, Card, InputText, LoadingContainerRectangle, Menu, MenuItem, Spacing } from "@barksh/bark-design-react";
 import { BarkPopupWindowModel, BarkRedirectModel } from "@barksh/client-authentication-browser";
 import { RecentSignInRecord } from "@barksh/client-authentication-browser/storage/declare";
 import * as React from "react";
@@ -17,7 +17,6 @@ export const SignInView: React.FC = () => {
 
     const navigate = useNavigate();
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const [recentDomains, setRecentDomains] = React.useState<RecentSignInRecord[]>([]);
     const [loading, setLoading] = React.useState(false);
     const [domain, setDomain] = React.useState('');
@@ -62,6 +61,7 @@ export const SignInView: React.FC = () => {
 
         barkClient.getRecentSignInRecords().then(
             (records: RecentSignInRecord[]) => {
+                console.log(records);
                 setRecentDomains(records);
             },
         );
@@ -104,6 +104,22 @@ export const SignInView: React.FC = () => {
                 </Button>
             </ButtonGroup>}
         >
+            {recentDomains.length > 0 ? <React.Fragment>
+                <Menu>
+                    {recentDomains.map((recent: RecentSignInRecord) => {
+                        return (<MenuItem
+                            key={recent.domain}
+                            title={recent.domain}
+                            onClick={() => {
+                                setDomain(recent.domain);
+                            }}
+                        />);
+                    })}
+                </Menu>
+                <Spacing
+                    size="large"
+                />
+            </React.Fragment> : null}
             <InputText
                 maximize
                 size="large"

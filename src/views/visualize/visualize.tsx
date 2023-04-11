@@ -64,6 +64,7 @@ export const VisualizeView: React.FC = () => {
                 <Tabs
                     controller={controller}
                     noBorder
+                    noHeaderBottomMargin
                 >
                     <VisualizeAuthenticationView
                         token={authenticationToken}

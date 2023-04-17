@@ -11,7 +11,7 @@
         "@barksh/authentication-types": "^1.0.0",
         "@barksh/bark-design-react": "^1.8.3",
         "@barksh/client-authentication-browser": "^1.8.3",
-        "@barksh/token-browser": "^1.4.0",
+        "@barksh/token-browser": "^1.6.0",
         "@sudoo/magic": "^1.9.0",
         "@sudoo/react-force": "^2.0.0",
         "connor": "^2.8.0",

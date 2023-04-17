@@ -256,10 +256,10 @@
     "@sudoo/url" "^1.6.1"
     connor "^2.8.0"
 
-"@barksh/token-browser@^1.4.0":
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/@barksh/token-browser/-/token-browser-1.4.0.tgz#8138c2bb0e49bda44bbbe255e4c60edcbb99801b"
-  integrity sha512-QGafbmwXAaBaNotSwuTxpSpjukehGBaHKY2TaHkXZc6QI+p7oMsiA47h3nAwb98BuP5iFOL/8PPjnWyTlchwaA==
+"@barksh/token-browser@^1.6.0":
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/@barksh/token-browser/-/token-browser-1.6.0.tgz#569c5b1e75039fa8e16870f89fd436a4d977bc61"
+  integrity sha512-wq60KM96AmR/OqKH4TjkGNgbm4vAbyiHrVGoMOScXJuB9rkmuq444SPuBLBUsa1uYwctYrf3LtehsY0VLnKlTw==
   dependencies:
     "@sudoo/jwt-web" "^3.2.0"
     connor "^2.8.0"

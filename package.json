@@ -16,7 +16,7 @@
         "@sudoo/react-force": "^2.0.0",
         "connor": "^2.8.0",
         "react-icons": "^4.8.0",
-        "react-router-dom": "^6.10.0",
+        "react-router-dom": "^6.11.1",
         "styled-components": "^5.3.10"
     },
     "devDependencies": {
@@ -25,7 +25,7 @@
         "@types/styled-components": "^5.1.26",
         "@vitejs/plugin-react": "^4.0.0",
         "ts-node": "^10.9.1",
-        "vite": "^4.3.2"
+        "vite": "^4.3.5"
     },
     "nyc": {
         "extension": [

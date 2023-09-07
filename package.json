@@ -15,7 +15,7 @@
         "@sudoo/magic": "^1.9.0",
         "@sudoo/react-force": "^2.0.0",
         "connor": "^2.8.0",
-        "react-icons": "^4.10.1",
+        "react-icons": "^4.11.0",
         "react-router-dom": "^6.15.0",
         "styled-components": "^6.0.7"
     },

@@ -8,7 +8,7 @@
         "preview": "vite preview"
     },
     "dependencies": {
-        "@barksh/authentication-types": "^1.0.0",
+        "@barksh/authentication-types": "^1.1.0",
         "@barksh/bark-design-react": "^1.8.3",
         "@barksh/client-authentication-browser": "^1.8.3",
         "@barksh/token-browser": "^1.4.0",

@@ -23,7 +23,7 @@
         "@sudoo/react-force-dev": "^2.0.0",
         "@sudoo/triforce": "^3.11.0",
         "@types/styled-components": "^5.1.30",
-        "@vitejs/plugin-react": "^4.1.1",
+        "@vitejs/plugin-react": "^4.2.0",
         "ts-node": "^10.9.1",
         "vite": "^4.5.0"
     },

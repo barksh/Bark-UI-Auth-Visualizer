@@ -16,7 +16,7 @@
         "@sudoo/react-force": "^2.0.0",
         "connor": "^2.9.0",
         "react-icons": "^5.0.1",
-        "react-router-dom": "^6.22.0",
+        "react-router-dom": "^6.22.2",
         "styled-components": "^6.1.8"
     },
     "devDependencies": {
